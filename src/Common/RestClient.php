@@ -127,7 +127,7 @@ class RestClient {
                 CURLOPT_SSL_VERIFYPEER => false
             ];
 
-            $this->httpClient = new CurlClient(new GuzzleMessageFactory(), new GuzzleStreamFactory(), $options);
+            $this->httpClient = new CurlClient(null, null, $options);
         }
 
         return $this->httpClient;
